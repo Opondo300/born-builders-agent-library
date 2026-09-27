@@ -1,0 +1,26 @@
+{
+  "archivedAt": "2026-09-27",
+  "entries": [
+    {
+      "originalPath": "README.md",
+      "archivePath": "archive/2026-09-27/README.md",
+      "sha256": "32cfa2f006d2db2e428a3aec1dbc4ac81576f86772f422c618c0bc7df7e9acd3",
+      "sourceCommit": "306060d336f53dfd5aec4294f832371f6508f3dc",
+      "reason": "Historical company-specific operation or unsupported live-use claim; replaced by a portable library guide or method."
+    },
+    {
+      "originalPath": "skills/icp-matrix/SKILL.md",
+      "archivePath": "archive/2026-09-27/skills/icp-matrix/SKILL.md",
+      "sha256": "33b48a30d3aba5d86099c4fb336792ad4fa2e8947de021320ce968f97648c97c",
+      "sourceCommit": "306060d336f53dfd5aec4294f832371f6508f3dc",
+      "reason": "Historical company-specific operation or unsupported live-use claim; replaced by a portable library guide or method."
+    },
+    {
+      "originalPath": "skills/cold-email-doctrine/SKILL.md",
+      "archivePath": "archive/2026-09-27/skills/cold-email-doctrine/SKILL.md",
+      "sha256": "3e1281f49b018ae308c341a82c8bd82cf43338704216c145238a7ec6e6e74f89",
+      "sourceCommit": "306060d336f53dfd5aec4294f832371f6508f3dc",
+      "reason": "Historical company-specific operation or unsupported live-use claim; replaced by a portable library guide or method."
+    }
+  ]
+}

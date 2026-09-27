@@ -1,8 +1,8 @@
 # Born Builders — Agent & Skill Library
 
-A portable collection of 23 agent definitions and 43 skills for Claude Code, counted from this repository on 27 September 2026. It contains reusable methods and examples for sales, marketing, content, workflow design, research and strategy.
+The actual agent and skill stack Build n Bloom runs in Claude Code. 23 agents. 43 skills. Sanitised for installation on any machine.
 
-Repository contents do not establish what is installed or in active use on a particular machine. Start with [LIBRARY-GUIDE.md](LIBRARY-GUIDE.md) for scope, project authority and known portability limits. Older company-specific ICP and outreach instructions are preserved in the [archive](archive/2026-09-27/INDEX.md).
+This is not a starter kit. These are the files in active daily use for sales, marketing, content, workflow automation, research, and strategy.
 
 ---
 
@@ -17,9 +17,13 @@ If you have not used agents or skills before, start with Module 1 of the Born Bu
 
 ## Installation
 
-### Bulk installer status
+### Option A — One command
 
-`install.sh` is present but has a known interruption risk: under `set -e`, its first zero-valued post-increment returns a failing status. Use the selective manual method below until that script is repaired and tested. Existing installed copies also require separate review; repository edits do not update them automatically.
+```bash
+bash install.sh
+```
+
+Copies all agents and skills to `~/.claude/agents/` and `~/.claude/skills/`. Restart Claude Code after running.
 
 ### Option B — Manual
 
@@ -27,11 +31,10 @@ Copy the files you want:
 
 ```bash
 # Copy a specific agent
-mkdir -p ~/.claude/agents ~/.claude/skills
-cp -n agents/planner.md ~/.claude/agents/
+cp agents/planner.md ~/.claude/agents/
 
 # Copy a specific skill
-cp -Rn skills/persuasion-engine ~/.claude/skills/
+cp -r skills/persuasion-engine ~/.claude/skills/
 ```
 
 ---
@@ -79,7 +82,7 @@ Skills work on-demand — they load a sourced framework into context when called
 | `engineering-frontend-developer` | React, Next.js, UI implementation, performance |
 | `engineering-backend-architect` | APIs, server architecture, database design, cloud |
 | `engineering-ai-engineer` | AI/ML integration, Claude API, agentic systems |
-| `specialized-workflow-architect` | Workflow discovery, specifications, failure paths and handoffs |
+| `specialized-workflow-architect` | Windmill and n8n workflow design, spec and debugging |
 | `specialized-document-generator` | Professional PDF, PPTX, DOCX, XLSX generation with charts and data |
 
 ---
@@ -92,7 +95,7 @@ Skills work on-demand — they load a sourced framework into context when called
 | `persuasion-engine` | Buyer neuroscience + Cialdini, SPIN, Voss, pricing psychology |
 | `copywriting-craft` | Copy structure, headlines, hooks, conversion mechanics |
 | `hook-engine` | Hook generation system for posts, emails, ads, video |
-| `cold-email-doctrine` | Evidence-based drafting method; campaign and sending decisions remain project-specific |
+| `cold-email-doctrine` | 80-word cap, plain text, single CTA, personalised first-line methodology |
 | `article-writing` | Long-form articles, guides, blog posts, newsletter issues |
 
 ### Content and Brand
@@ -122,7 +125,7 @@ Skills work on-demand — they load a sourced framework into context when called
 | `market-launch` | Week-by-week product launch playbook |
 | `market-proposal` | Client-ready marketing services proposal |
 | `market-report` | Professionally formatted marketing report |
-| `icp-matrix` | Evidence-based segmentation and qualification; no embedded company rate card |
+| `icp-matrix` | Ideal customer profile — segmentation, qualification, targeting |
 | `competitive-intel` | Systematic competitor tracking — battlecards, win/loss, positioning |
 | `contract-and-proposal-writer` | Contracts and proposals for services engagements |
 
